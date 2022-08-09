@@ -18,6 +18,31 @@ body:
       label: Host side component
       description: Does this test require development of a host side component?
       options:
+        - Unknown
         - SystemVerilog
         - Rust
         - SystemVerilog+Rust
+  - type: dropdown
+    id: opentitantool-infra-done
+    attributes:
+      label: OpenTitanTool infrastructure implemented
+      description: Does the required opentitantool infrastructure exist so that the Rust component can be developed? If not, this must be developed in SV. 'None' means that there is no Rust component for this test.
+      options:
+        - Unknown
+        - Yes
+        - No
+  - type: input
+    id: contact
+    attributes:
+      label: Contact person
+      description: GitHub username for a hardware engineer who can answer questions.
+  - type: markdown
+    id: checklist
+    attributes:
+      value: |
+        - [ ] Check if existing test covers most or all of this testpoint
+        - [ ] Device-side (C) component developed
+        - [ ] Bazel build rules developed
+        - [ ] Host-side component developed
+        - [ ] HJSON test plan updated with test name (so it shows up in the dashboard)
+        - [ ] Test added to dvsim nightly regression (and passing at time of checking)
