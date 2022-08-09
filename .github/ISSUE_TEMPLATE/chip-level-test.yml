@@ -29,8 +29,8 @@ body:
       description: Does the required opentitantool infrastructure exist so that the Rust component can be developed? If not, this must be developed in SV. 'None' means that there is no Rust component for this test.
       options:
         - Unknown
-        - Yes
-        - No
+        - "Yes"
+        - "No"
   - type: input
     id: contact
     attributes:
