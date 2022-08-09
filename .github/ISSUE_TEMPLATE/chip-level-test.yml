@@ -42,7 +42,7 @@ body:
       label: Checklist
       value: |
         Please fill out this checklist as items are completed. Link to PRs and issues as appropriate.
-        - [ ] Check if existing test covers most or all of this testpoint
+        - [ ] Check if existing test covers most or all of this testpoint (if so either extend the test to cover all points, or mark the following 3 checklist items as done)
         - [ ] Device-side (C) component developed
         - [ ] Bazel build rules developed
         - [ ] Host-side component developed
