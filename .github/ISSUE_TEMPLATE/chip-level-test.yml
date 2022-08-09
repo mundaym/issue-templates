@@ -18,7 +18,6 @@ body:
       label: Host side component
       description: Does this test require development of a host side component?
       options:
-        - N/A
         - SystemVerilog
         - Rust
         - SystemVerilog+Rust
