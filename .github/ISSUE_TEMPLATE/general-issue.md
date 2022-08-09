@@ -1,4 +1,4 @@
 ---
 name: General Issue
-description: A blank issue for general purpose use.
+about: A blank issue for general purpose use.
 ---
